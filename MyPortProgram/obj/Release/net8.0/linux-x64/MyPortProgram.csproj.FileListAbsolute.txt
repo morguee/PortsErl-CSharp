@@ -1,0 +1,14 @@
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/bin/Release/net8.0/linux-x64/MyPortProgram
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/bin/Release/net8.0/linux-x64/MyPortProgram.deps.json
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/bin/Release/net8.0/linux-x64/MyPortProgram.runtimeconfig.json
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/bin/Release/net8.0/linux-x64/MyPortProgram.dll
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/bin/Release/net8.0/linux-x64/MyPortProgram.pdb
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/MyPortProgram.GeneratedMSBuildEditorConfig.editorconfig
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/MyPortProgram.AssemblyInfoInputs.cache
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/MyPortProgram.AssemblyInfo.cs
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/MyPortProgram.csproj.CoreCompileInputs.cache
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/MyPortProgram.dll
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/refint/MyPortProgram.dll
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/MyPortProgram.pdb
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/MyPortProgram.genruntimeconfig.cache
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/Release/net8.0/linux-x64/ref/MyPortProgram.dll

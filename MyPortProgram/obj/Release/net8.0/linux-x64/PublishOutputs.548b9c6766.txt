@@ -1,0 +1,2 @@
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/publish/MyPortProgram.pdb
+/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/publish/MyPortProgram
