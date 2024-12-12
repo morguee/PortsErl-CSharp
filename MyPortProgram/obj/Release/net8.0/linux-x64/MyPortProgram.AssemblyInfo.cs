@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyPortProgram")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6a4ddce185be5d81c2d5807c25cfac8eaac345f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyPortProgram")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyPortProgram")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

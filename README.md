@@ -25,9 +25,13 @@ Port = my_port:start().
 Expectation: #Port<0.4>  ...or something similar
 If path to exe is wrong: sh: 1: exec: /home/morgan/...: not found
 ```
-Expectation: my_port:call(Port, <<"Hello, C#">>).
+my_port:call(Port, <<"Hello, C#">>).
 ```
-<<"Received: Hello, C#">>
+Expectation: <<"Received: Hello, C#">>
+```
+my_port:call(Port, <<"REVERSE Hello, C#">>).
+```
+Expectation: <<"#C ,olleH">>
 ```
 my_port:stop(Port).
 ```

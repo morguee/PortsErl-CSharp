@@ -82,11 +82,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/MyPortProgram.csproj",
+      "projectUniqueName": "/home/morgan/Documents/Programming/PortsErl-CSharp/MyPortProgram/MyPortProgram.csproj",
       "projectName": "MyPortProgram",
-      "projectPath": "/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/MyPortProgram.csproj",
+      "projectPath": "/home/morgan/Documents/Programming/PortsErl-CSharp/MyPortProgram/MyPortProgram.csproj",
       "packagesPath": "/home/morgan/.nuget/packages/",
-      "outputPath": "/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/obj/",
+      "outputPath": "/home/morgan/Documents/Programming/PortsErl-CSharp/MyPortProgram/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/morgan/.nuget/NuGet/NuGet.Config"

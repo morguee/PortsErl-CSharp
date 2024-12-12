@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yxyJQCF+Pbo=",
+  "dgSpecHash": "/DGsm7DuizM=",
   "success": true,
-  "projectFilePath": "/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/MyPortProgram.csproj",
+  "projectFilePath": "/home/morgan/Documents/Programming/PortsErl-CSharp/MyPortProgram/MyPortProgram.csproj",
   "expectedPackageFiles": [
     "/home/morgan/.nuget/packages/microsoft.net.illink.tasks/8.0.11/microsoft.net.illink.tasks.8.0.11.nupkg.sha512"
   ],

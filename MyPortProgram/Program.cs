@@ -84,7 +84,16 @@ namespace MyPortProgram
 
         static string ProcessMessage(string message)
         {
-            // For this example, we'll simply echo the message back with a prefix
+            // Check for commands
+            if (message.StartsWith("REVERSE "))
+            {
+                string toReverse = message.Substring(8);
+                char[] charArray = toReverse.ToCharArray();
+                Array.Reverse(charArray);
+                return new string(charArray);
+            }
+
+            // Default behavior: echo the message back with a prefix
             return $"Received: {message}";
         }
     }
