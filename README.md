@@ -32,3 +32,12 @@ Expectation: my_port:call(Port, <<"Hello, C#">>).
 my_port:stop(Port).
 ```
 Expectation: true
+
+**If you make edits to the Program.cs file do this:
+```
+cd MyPortProgram
+dotnet publish -c Release -r linux-x64 --self-contained false -p:PublishSingleFile=true -o publish
+```
+```
+cd ..
+```
