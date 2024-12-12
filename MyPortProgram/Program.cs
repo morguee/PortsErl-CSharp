@@ -84,34 +84,53 @@ namespace MyPortProgram
 
         static string ProcessMessage(string message)
         {
-            // Check for commands
-            if (message.StartsWith("REVERSE "))
+            try
             {
-                string toReverse = message.Substring(8);
-                char[] charArray = toReverse.ToCharArray();
-                Array.Reverse(charArray);
-                return new string(charArray);
-            }
-            else if (message.StartsWith("MULTIPLY "))
-            {
-                string[] parts = message.Substring(9).Split(' ');
-                if (parts.Length == 2 && int.TryParse(parts[0], out int num1) && int.TryParse(parts[1], out int num2))
+                // Parse the message in the format "Module:Function(Args)"
+                var parts = message.Split(new[] { ':', '(', ')', ',' }, StringSplitOptions.RemoveEmptyEntries);
+                if (parts.Length >= 3)
                 {
-                    return Multiply(num1, num2).ToString();
-                }
-                else
-                {
-                    return "Error: Invalid MULTIPLY command format. Use 'MULTIPLY num1 num2'.";
-                }
-            }
+                    string module = parts[0];
+                    string function = parts[1];
+                    var args = parts.Skip(2).ToArray();
 
-            // Default behavior: echo the message back with a prefix
-            return $"Received: {message}";
+                    if (module == "csharp" && args.Length == 2 &&
+                        int.TryParse(args[0], out int num1) && int.TryParse(args[1], out int num2))
+                    {
+                        switch (function)
+                        {
+                            case "multiply":
+                                return Multiply(num1, num2).ToString();
+                            case "add":
+                                return Add(num1, num2).ToString();
+                            case "subtract":
+                                return Subtract(num1, num2).ToString();
+                            default:
+                                return "Error: Unknown function.";
+                        }
+                    }
+                }
+                return $"Error: Invalid message format. Received message: {message}";
+            }
+            catch (Exception ex)
+            {
+                return $"Error: {ex.Message}";
+            }
         }
 
         static int Multiply(int a, int b)
         {
             return a * b;
+        }
+
+        static int Add(int a, int b)
+        {
+            return a + b;
+        }
+
+        static int Subtract(int a, int b)
+        {
+            return a - b;
         }
     }
 }

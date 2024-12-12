@@ -25,17 +25,17 @@ Port = my_port:start().
 Expectation: #Port<0.4>  ...or something similar
 If path to exe is wrong: sh: 1: exec: /home/morgan/...: not found
 ```
-my_port:call(Port, <<"Hello, C#">>).
+my_port:call(Port, {csharp, multiply, [9, 9]}).
 ```
-Expectation: <<"Received: Hello, C#">>
+Expectation: 81
 ```
-my_port:call(Port, <<"REVERSE Hello, C#">>).
+my_port:call(Port, {csharp, add, [9, 9]}).
 ```
-Expectation: <<"#C ,olleH">>
+Expectation: 18
 ```
-my_port:call(Port, <<"MULTIPLY 9 9">>).
+my_port:call(Port, {csharp, subtract, [9, 9]}).
 ```
-Expectation: <<"81">>
+Expectation: 0
 ```
 my_port:stop(Port).
 ```

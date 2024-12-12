@@ -7,11 +7,19 @@ start() ->
     Port = open_port({spawn, Command}, [{packet, 2}, binary, exit_status]),
     Port.
 
-call(Port, Message) when is_binary(Message) ->
-    port_command(Port, Message),
+call(Port, {Module, Function, Args}) ->
+    %% Format the message as "Module:Function(Args)"
+    ArgsString = lists:flatten(io_lib:format("~s", [string:join([integer_to_list(A) || A <- Args], ",")])),
+    Message = io_lib:format("~s:~s(~s)", [atom_to_list(Module), atom_to_list(Function), ArgsString]),
+    BinaryMessage = list_to_binary(lists:flatten(Message)),
+    % io:format("Sending message: ~p~n", [BinaryMessage]),
+    port_command(Port, BinaryMessage),
     receive
         {Port, {data, Data}} ->
-            Data;
+            case catch binary_to_integer(Data) of
+                {'EXIT', _} -> {error, invalid_data};
+                Int -> Int
+            end;
         {Port, closed} ->
             {error, closed};
         {'EXIT', Port, Reason} ->
