@@ -3,7 +3,7 @@
 
 start() ->
     %% Update the path to your C# executable
-    Command = "/home/morgan/Documents/Programming/PortsErlToC#/MyPortProgram/publish/MyPortProgram",
+    Command = "/home/morgan/Documents/Programming/PortsErl-CSharp/MyPortProgram/publish/MyPortProgram",
     Port = open_port({spawn, Command}, [{packet, 2}, binary, exit_status]),
     Port.
 
