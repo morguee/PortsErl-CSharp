@@ -36,6 +36,8 @@ Expectation: 18
 my_port:call(Port, {csharp, subtract, [9, 9]}).
 ```
 Expectation: 0
+
+CTRL + C to exit or:
 ```
 my_port:stop(Port).
 ```
