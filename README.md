@@ -1,5 +1,7 @@
 # Connecting Erlang and CSharp using Ports
 
+**Must have .NET8.0 and OTP 25+
+
 Edit line 6 in my_port.erl with your path to CSharp executable 
 Mine is this:
 ```
