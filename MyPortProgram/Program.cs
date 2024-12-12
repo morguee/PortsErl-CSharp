@@ -92,9 +92,26 @@ namespace MyPortProgram
                 Array.Reverse(charArray);
                 return new string(charArray);
             }
+            else if (message.StartsWith("MULTIPLY "))
+            {
+                string[] parts = message.Substring(9).Split(' ');
+                if (parts.Length == 2 && int.TryParse(parts[0], out int num1) && int.TryParse(parts[1], out int num2))
+                {
+                    return Multiply(num1, num2).ToString();
+                }
+                else
+                {
+                    return "Error: Invalid MULTIPLY command format. Use 'MULTIPLY num1 num2'.";
+                }
+            }
 
             // Default behavior: echo the message back with a prefix
             return $"Received: {message}";
+        }
+
+        static int Multiply(int a, int b)
+        {
+            return a * b;
         }
     }
 }

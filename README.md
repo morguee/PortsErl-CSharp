@@ -33,6 +33,10 @@ my_port:call(Port, <<"REVERSE Hello, C#">>).
 ```
 Expectation: <<"#C ,olleH">>
 ```
+my_port:call(Port, <<"MULTIPLY 9 9">>).
+```
+Expectation: <<"81">>
+```
 my_port:stop(Port).
 ```
 Expectation: true
